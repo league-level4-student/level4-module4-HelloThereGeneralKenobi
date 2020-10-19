@@ -45,7 +45,7 @@ public class PolymorphWindow extends JPanel implements ActionListener, MouseList
    	 morphList.add(redPoly);
    	 morphList.add(movingMorph);
    	 morphList.add(mouseMorph);
-     morphList.add(messageMorph);
+     //morphList.add(messageMorph);
    	 
    	 window.addMouseListener(this);
    	 window.addMouseMotionListener(this);
