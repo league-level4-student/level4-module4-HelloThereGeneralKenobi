@@ -22,4 +22,21 @@ public class Hospital {
 	ArrayList<Patient> getPatients() {
 		return patientList;
 	}
+
+	public void assignPatientsToDoctors() throws DoctorFullException {
+		// TODO Auto-generated method stub
+		while(patientList.size() > 0) {
+			for(int j= 0; j < docList.size(); j++) {
+				try {
+					docList.get(j).assignPatient(patientList.get(0));
+					patientList.remove(0);
+					break;
+				}
+				catch(DoctorFullException exception) {
+					continue;
+				}
+				
+			}
+		}
+	}
 }
